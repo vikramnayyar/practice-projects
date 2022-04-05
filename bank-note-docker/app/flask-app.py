@@ -13,7 +13,7 @@ model = pickle.load(pickle_in)
 
 @app.route('/')               # home page
 def welcome():
-    return "Hare Krishna"
+    return "Hare Krishna, type http://192.168.1.5:8000/apidocs/ in browser"
 
 
 @app.route('/predict')        # performs prediction
