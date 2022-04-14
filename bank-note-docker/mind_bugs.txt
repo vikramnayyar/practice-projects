@@ -8,18 +8,32 @@ Run: sudo docker run -p 8000:8000 bank_note_api
 
 
 			Docker Steps
-STEP 1: Create conda virtual env: conda create -name env_name
+STEP 1: Create conda virtual env: 
+```bash
+conda create -name env_name
+```
 
-STEP 2: In terminal run: **sudo docker build -t app_name .**
-        app_name represents application name
+STEP 2: In terminal run: 
+```bash
+sudo docker build -t app_name .
+```
+app_name represents application name
 
 Alternative STEP: Remove any docker image: docker rmi -f docker_image_name 
 Alternative STEP: Remove dangling docker images: docker image prune
   
-STEP 3: check docker installed image using: docker images
+STEP 3: check docker installed image using: 
+```bash
+sudo docker images
+```
 
-STEP 4: Install container using docker image: docker run -it --name my_docker_container_name my_docker_image_name:version  
+STEP 4: Install container using docker image:   
+```bash
+sudo docker run -it --name my_docker_container_name my_docker_image_name:version
+```
 
-STEP 5: Check the installed container (Run in new terminal tab): docker ps
-
+STEP 5: Check the installed container (Run in new terminal tab): 
+```bash
+sudo docker ps
+```
 The project is successfully dockerized !!
